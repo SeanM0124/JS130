@@ -96,3 +96,38 @@ When simple things occur, such as invalid user input etc. (things taht you can h
 The synchronous aspect of CommonJS modules make it unviable for browsers. CommonJS Modules are best for local programs(?)
 JS Modules are ideal for the broswer.
 */
+
+//PFA -- makeName applies partial function application. It returns a function wrapper that invokes fullName with fewer arguments that it expects. fullName now has a closure that
+//includes the argument that is passed into makeName.
+
+// function fullName(first, last) {
+// 	console.log(first + ' ' + last);
+// }
+
+// function makeName(last) {
+// 	return function(first) {
+// 		return fullName(first, last);
+// 	}
+// }
+
+// let menteleClan = makeName('Mentele');
+// menteleClan('Sean');
+// menteleClan('Mike');
+// menteleClan('Eric');
+
+
+/*
+--Hoisting--
+Hoisting is something that occurs during the creation phase. Essentially, the JS engine searches through the program, noting down all identifiers. Hoisting behaves differently
+depending on the identifier. For let, const and class declarations, the name is recognized, but the value is unset. This act places these variables in the Temporal Dead Zone
+until the code that sets the value runs. For var, the identifier is recognized, but until the code executes and sets the value, the variable will be set to undefined. Finally, the two
+behaviors of funtions during hoisting. With expressions, they will behave the same as the declarator does, but with function declarations, the the body is hoisted as well.
+
+Its important to note, when something is hoisted, it is hoisted to the top of its declarative scope, be it function or block.
+
+--The var statement--
+The var statement is declarator, one that behaves a bit differently from its counterparts. var's declarative scope is function scoped, further when you create a variable with var
+
+
+*/
+

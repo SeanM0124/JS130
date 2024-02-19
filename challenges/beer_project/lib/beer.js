@@ -32,4 +32,4 @@ class BeerSong {
   }
 }
 
-module.exports = Verse;
+module.exports = BeerSong;
