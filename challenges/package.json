@@ -2,5 +2,11 @@
   "dependencies": {
     "jest": "^29.7.0",
     "seedrandom": "^3.0.5"
+  },
+  "scripts": {
+    "test": "jest anagrams_project"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
   }
 }
